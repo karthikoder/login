@@ -1,0 +1,32 @@
+html
+	head
+		title login page
+	body
+		h2 signup
+		p #{t}
+		form(action="/signup",method="post")
+			label username
+			input(type="text",name="username",placeholder="enter username")
+			br
+			br
+			label password
+			input(type="password",name="password",placeholder="enter password")
+			br
+			br
+			label confirm password
+			input(type="password",name="pword",placeholder="confirm password")
+			br
+			br
+			input(type="submit",name="submit")
+		h2 login
+		p #{s}
+		form(action="/login",method="post")
+			label username
+			input(type="text",name="user",placeholder="enter username")
+			br
+			br
+			label password
+			input(type="password",name="pass",placeholder="enter password")
+			br
+			br
+			input(type="submit",name="submit")
